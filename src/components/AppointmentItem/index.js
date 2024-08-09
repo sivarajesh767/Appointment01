@@ -1,26 +1,24 @@
-// Write your code here
 import './index.css'
 
 const AppointmentItem = props => {
-  const {onAppointMent, toggleIsStarred} = props
-  const {id, title, date, isStarred} = onAppointMent
-  const imgUrl = isStarred
+  const {toggleAppointment, buttonAppointment} = props
+  const {id, title, date, isStarred} = toggleAppointment
+  const imgurl = isStarred
     ? 'https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png'
     : 'https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png'
-  const onClickButton = () => {
-    toggleIsStarred(id)
+  const onClickBtn = () => {
+    buttonAppointment(id)
   }
   return (
     <li>
       <div>
-        <p>{title}</p>
-        <button onClick={onClickButton} type="button">
-          start
-          <img src={imgUrl} alt="star" />
+        <h1>{title}</h1>
+        <p>{date}</p>
+        <button testid="star" onClick={onClickBtn}>
+          <img src={imgurl} />
         </button>
       </div>
-      <p className="date"> Date:{date}</p>
     </li>
   )
 }
-export default AppointmentItem
+export default AppointmentIte
