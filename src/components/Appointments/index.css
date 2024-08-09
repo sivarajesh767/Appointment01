@@ -1,1 +1,65 @@
 /* Write your CSS here */
+/* Write your CSS here */
+.bg-container {
+  background-image: linear-gradient(to bottom, #fbc7d4, #8b5cf6);
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  display: flex;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 10px;
+}
+.date {
+  display: flex;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 10px;
+}
+
+.container {
+  height: 56%;
+  width: 56%;
+  background-color: #ffff;
+  padding: 22px;
+}
+.changeTitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 1px;
+}
+.changeDate {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 1px;
+}
+.button-1 {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  background-color: lightblue;
+  font-size: 11px;
+  height: 30px;
+  width: 120px;
+  align-items: center;
+}
+.line {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.headg1 {
+  font-size: 19px;
+}
+img-co {
+  display: flex;
+  flex-direction: column;
+}
+.img {
+  height: 100px;
+  width: 290px;
+}
