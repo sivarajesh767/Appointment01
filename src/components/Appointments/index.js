@@ -67,7 +67,7 @@ class Appointments extends Component {
           <form onSubmit={this.onAddAppointment}>
             <h1 className="heading-1">Add Appointment</h1>
             <div className="con-1">
-             <label className="title" for="title">Title</label>
+             <label className="title" htmlFor="title">Title</label>
               <input
                 type="text"
                 id="title"
@@ -76,10 +76,10 @@ class Appointments extends Component {
                 onChange={this.onChangeTitle}
                 className="changeTitle"
               />
-              <label className="date" for="date">
+              <label className="date" htmlFor="date">
                 Date
               </label>
-              <inputc
+              <input
                 type="date"
                 name="date"
                 id="date"
