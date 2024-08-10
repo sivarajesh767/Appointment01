@@ -78,10 +78,11 @@ class Appointments extends Component {
               <label className="date">Date</label>
               <input
                 type="date"
-                id="date"
-                value={dateInput}
-                datenChange={this.onChangeDate}
+                id="date" 
                 className="changeDate"
+                value={dateInput}
+                onChange={this.onChangeDate} 
+                
               />
               <div className="img-co">
                 <button type="submit" className="button-1">
@@ -103,7 +104,7 @@ class Appointments extends Component {
           <ul className="un-order">
             {filterAppointment.map(eachAppointment => (
               <AppointmentItem
-                key={eachAppointment.id}
+                key={eachAppointment.id}                                                                                                                                                                                                                                                                                                                                                                      
                 toggleAppointment={this.toggleAppointment}
                 buttonAppointment={this.buttonAppointment}
               />
