@@ -67,22 +67,25 @@ class Appointments extends Component {
           <form onSubmit={this.onAddAppointment}>
             <h1 className="heading-1">Add Appointment</h1>
             <div className="con-1">
-              <label className="title">Title</label>
+             <label className="title" for="title">Title</label>
               <input
                 type="text"
                 id="title"
+                name="title"
                 value={titleInput}
                 onChange={this.onChangeTitle}
                 className="changeTitle"
               />
-              <label className="date">Date</label>
-              <input
+              <label className="date" for="date">
+                Date
+              </label>
+              <inputc
                 type="date"
-                id="date" 
-                className="changeDate"
+                name="date"
+                id="date"
                 value={dateInput}
-                onChange={this.onChangeDate} 
-                
+                onChange={this.onChangeDate}
+                className="changeDate"
               />
               <div className="img-co">
                 <button type="submit" className="button-1">
