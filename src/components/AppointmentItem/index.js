@@ -21,4 +21,4 @@ const AppointmentItem = props => {
     </li>
   )
 }
-export default AppointmentIte
+export default AppointmentItem
