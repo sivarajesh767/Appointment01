@@ -49,10 +49,11 @@ class Appointments extends Component {
   newAppointmentList = () => {
     const {appointmentList, isFilterActive} = this.state
     if (isFilterActive) {
-      return appointmentList.filter(eachFilter => {
+      return appointmentList.filter(eachFilter => 
         eachFilter.isStarred === true
-      })
+      )
     }
+    return appointmentList
   }
   isActive = () => {
     const {isFilterActive} = this.state
